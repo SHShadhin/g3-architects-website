@@ -11,6 +11,12 @@
 .display-flex {
   display: flex;
 }
+.section-title {
+  color: var(--Dark 01, rgba(19, 19, 19, 1));
+font-family: Work Sans;
+font-size: 2.7rem;
+font-weight: 700;
+}
 /* Dark-1 */
 .text-dark {
   color: rgba(19, 19, 19, 1);
@@ -19,7 +25,6 @@
 .text-gray {
   color: rgba(66, 66, 66, 1);
 }
-
 /* Dark-3 */
 .text-light-gray {
   color: rgba(114, 114, 114, 1);
@@ -85,8 +90,6 @@
   margin-bottom: 30px;
 }
 
-
-
 /* main section start*/
 
 /* our features */
@@ -98,26 +101,65 @@
 }
 
 .team-img {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 .feature-title {
-    font-size: 2.7rem;
+  font-size: 2.7rem;
   font-weight: 400;
-
 }
 .bold {
-    font-weight: 700;
+  font-weight: 700;
 }
 .feature-description {
-    font-size: 0.8rem;
-    margin-bottom: 32px;
+  font-size: 0.8rem;
+  margin-bottom: 32px;
 }
 .yellow {
-    color: rgba(255, 144, 14, 1);
-    font-weight: 700;
+  color: rgba(255, 144, 14, 1);
+  font-weight: 700;
 }
+
+/* some facts section */
+.client-box {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+.fact-description {
+  max-width: 430px;
+  margin-top: 24px;
+  margin-bottom: 100px;
+}
+.boxes {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 30px;
+}
+.box {
+  background: rgba(255, 255, 255, 1);
+  height: 240px;
+  width: 240px;
+  border: 1px solid rgba(255, 144, 14, 1);
+  border-radius: 8px;
+}
+.box img {
+  margin-top: 45px;
+}
+
+.number {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin: 10px auto;
+}
+.name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+
 
 /* Media query responsive */
 
@@ -132,10 +174,9 @@
   }
 }
 
-
 /* responsive medium device */
 
-@media screen and (min-width:576px) and (max-width:992px) {
+@media screen and (min-width: 576px) and (max-width: 992px) {
   .teams {
     flex-direction: column;
   }
